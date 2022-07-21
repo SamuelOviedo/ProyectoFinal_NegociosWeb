@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="/{{BASE_DIR}}/public/css/appstyle.css" />
   <link rel="stylesheet" href="/{{BASE_DIR}}/public/css/plantillaBase.css" />
   <script src="https://kit.fontawesome.com/{{FONT_AWESOME_KIT}}.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
   {{foreach SiteLinks}}
   <link rel="stylesheet" href="/{{~BASE_DIR}}/{{this}}" />
   {{endfor SiteLinks}}
@@ -23,6 +29,8 @@
     <li><a href="index.php?page=index"><i class="fas fa-home"></i>&nbsp;Inicio</a></li>
     <li><a href="index.php?page=sec_login"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión</a></li>
     <li><a href="index.php?page=sec_register"><i class="fas fa-user-plus"></i>&nbsp;Crear Cuenta</a></li>
+    <li><a href="index.php?page=sedah_plantillabase"><i class="fas fa-user-plus"></i>&nbsp;Plantilla base</a></li>
+
   </ul>
   <main>
     {{{page_content}}}
@@ -33,6 +41,8 @@
   {{foreach EndScripts}}
   <script src="/{{~BASE_DIR}}/{{this}}"></script>
   {{endfor EndScripts}}
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
 </body>
 
 </html>
