@@ -14,10 +14,16 @@
 
 <div class="card">
     <div class="imgBx">
-        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80">
+        <img
+            src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
     </div>
     <div class="details">
         <h2>What is Lorem Ipsum?</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
 </div>
+
+<table class="table">
+    <thead class="table-light"></thead>
+    <tbody></tbody>
+</table>
