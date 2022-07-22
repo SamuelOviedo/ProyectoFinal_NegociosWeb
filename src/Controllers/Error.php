@@ -8,8 +8,8 @@ class Error extends PublicController
     {
         http_response_code(400);
         \Views\Renderer::render(
-            "error",
-            array("page_title"=>"¡No se encuentra el recurso solicitado!")
+            "sedah/error",
+            array("page_title"=>"¡No esperabamos esto!")
         );
     }
 }
