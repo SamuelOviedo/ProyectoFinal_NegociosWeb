@@ -103,3 +103,22 @@
     margin: 20px 0 0;
     color: #fff;
 }
+
+#listProgress{
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#listProgress .active {
+    color: #673AB7;
+}
+
+#listProgress li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}

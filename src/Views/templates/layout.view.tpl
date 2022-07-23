@@ -29,7 +29,6 @@
     <li><a href="index.php?page=index"><i class="fas fa-home"></i>&nbsp;Inicio</a></li>
     <li><a href="index.php?page=sec_login"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión</a></li>
     <li><a href="index.php?page=sec_register"><i class="fas fa-user-plus"></i>&nbsp;Crear Cuenta</a></li>
-    <li><a href="index.php?page=sedah_plantillabase"><i class="fas fa-user-plus"></i>&nbsp;Plantilla base</a></li>
     <li><a href="index.php?page=sedah_infoenvio"><i class="fas fa-user-plus"></i>&nbsp;Pasarela</a></li>
 
   </ul>
@@ -44,6 +43,7 @@
   {{endfor EndScripts}}
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+  <script src="../../../public/js/progressbar.js"></script>
 </body>
 
 </html>
