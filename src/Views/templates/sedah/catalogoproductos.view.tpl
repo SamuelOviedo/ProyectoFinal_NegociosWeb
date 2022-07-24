@@ -99,7 +99,7 @@
         </button>
       </div>
       <!-- Carousel wrapper -->
-    </div>
+    </div> 
 
     <div class="col">
         <!-- Carousel wrapper -->
