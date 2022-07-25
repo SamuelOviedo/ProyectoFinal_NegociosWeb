@@ -1,23 +1,51 @@
+<div class="container-fluid">
 
-<nav aria-label="Pasarela">
-    <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="index.php?page=sedah_infopago">Previous</a>
-        </li>
+    <form id="infoEnvio">
+        <ul id="listProgress">
+            <li id="direccion"><i class="fas fa-directions"></i>Envio</li>
+            <li id="pago"><i class="far fa-credit-card"></i>Pago</li>
+            <li class="active" id="confirmacion"><i class="far fa-check-square"></i>Confirmación</li>
+            <li id="factura"><i class="fas fa-file-invoice-dollar"></i>Factura</li>
+        </ul>
 
-        <li class="page-item"><a class="page-link" href="index.php?page=sedah_infoenvio">1</a></li>
+        <!-- progressbar -->
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                style="width: 65%"></div>
+        </div>
+        <br>
+        <h1>Prefactura y confirmación</h1>
 
-
-        <li class="page-item"><a class="page-link" href="index.php?page=sedah_infopago">2</a></li>
-
-        <li class="page-item active"><a class="page-link" href="#">3</a></li>
-
-        <li class="page-item"><a class="page-link" href="index.php?page=sedah_factura">4</a></li>
-
-        <li class="page-item">
-            <a class="page-link" href="index.php?page=sedah_factura">Next</a>
-        </li>
-    </ul>
-</nav>
-
-<h1>Prefactura y confirmación</h1>
+        <div class="container">
+            <h3>Su total a pagar es de:</h3>
+            <p>L.185</p>
+        </div>
+        <div class="text-center row">
+            <div class="col-5">
+                <button name="btnAtras" id="btnAtras" type="button" class="btn btn-info">Atras</button>
+            </div>
+            <div class="col-1">
+                <button name="btnConfirmar" id="btnConfirmar" type="button" class="btn btn-warning">Confirmar</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('btnConfirmar').addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = 'index.php?page=sedah_factura';
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('btnAtras').addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = 'index.php?page=sedah_infopago';
+        });
+    });
+</script>

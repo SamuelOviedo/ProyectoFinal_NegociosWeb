@@ -1,23 +1,21 @@
+<div class="container-fluid">
 
-<nav aria-label="Pasarela">
-    <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="index.php?page=sedah_prefactura">Previous</a>
-        </li>
+    <form id="infoEnvio">
+        <ul id="listProgress">
+            <li id="direccion"><i class="fas fa-directions"></i>Envio</li>
+            <li id="pago"><i class="far fa-credit-card"></i>Pago</li>
+            <li id="confirmacion"><i class="far fa-check-square"></i>Confirmación</li>
+            <li class="active" id="factura"><i class="fas fa-file-invoice-dollar"></i>Factura</li>
+        </ul>
 
-        <li class="page-item"><a class="page-link" href="index.php?page=sedah_infoenvio">1</a></li>
+        <!-- progressbar -->
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                style="width: 100%"></div>
+        </div>
+        <br>
+        <h1>Factura</h1>
 
-
-        <li class="page-item"><a class="page-link" href="index.php?page=sedah_infopago">2</a></li>
-
-        <li class="page-item"><a class="page-link" href="index.php?page=sedah_prefactura">3</a></li>
-
-        <li class="page-item active"><a class="page-link" href="#">4</a></li>
-
-        <li class="page-item disabled">
-            <a class="page-link" href="#">Next</a>
-        </li>
-    </ul>
-</nav>
-
-<h1>Factura</h1>
+    </form>
+</div>
