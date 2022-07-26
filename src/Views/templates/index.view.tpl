@@ -1,2 +1,9 @@
-<body background="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1590&q=80" 
-    bgcolor="FFCECB"></body>
+<section class="home">
+    <h1>¡Bienvenido a SEDAH!</h1>
+</section>
+<div class="contenidoIndex">
+    <p>Donde encontrarás cualquier libro que estes buscando, desde libros de lectura para los pequeños
+        de la casa, hasta libros completos de estudio de las diferentes ramas en las que necesites
+        enriquecer tus conocimientos.
+    </p>
+</div>

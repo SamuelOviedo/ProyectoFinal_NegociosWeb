@@ -71,7 +71,7 @@ class InfoPago extends PublicController
 
         }elseif ((strlen($this->viewData["mesEx"])) != 2) {
             $this->viewData["error_mesEx"][] =
-                "El mes es incorrecto, el formato es: (Enero) = '01'";
+                "El formato es: (Enero) = '01'";
             $hasErrors = true;
         }
 
@@ -82,12 +82,12 @@ class InfoPago extends PublicController
 
         }elseif (((strlen($this->viewData["anioEx"])) != 4)) {
             $this->viewData["error_anioEx"][] =
-                "El año es incorrecto, el formato es: '2023'";
+                "El formato es: '2023'";
             $hasErrors = true;
         }
 
         $fecha_actual = date("m").'-'.date("Y");
-        if (($fecha_actual > ($this->viewData["mesEx"]).'-'.($this->viewData["anioEx"]))){
+        if (($fecha_actual >= ($this->viewData["mesEx"]).'-'.($this->viewData["anioEx"]))){
             $this->viewData["error_fecha"][] =
                 "El fecha ingresada es invalida";
             $hasErrors = true;

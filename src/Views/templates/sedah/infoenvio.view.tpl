@@ -1,10 +1,11 @@
+<div class="container p-5">
+    <div style="height: 100px"></div>
 <div class="container-fluid">
-
     <ul id="listProgress">
-        <li class="active" id="direccion"><i class="fas fa-directions"></i>Envio</li>
-        <li id="pago"><i class="far fa-credit-card"></i>Pago</li>
-        <li id="confirmacion"><i class="far fa-check-square"></i>Confirmación</li>
-        <li id="factura"><i class="fas fa-file-invoice-dollar"></i>Factura</li>
+        <li class="active" id="direccion"><strong>Envio</strong></li>
+        <li id="pago"><strong>Pago</strong></li>
+        <li id="confirmacion"></i><strong>Confirmación</strong></li>
+        <li id="factura"></i><strong>Factura</strong></li>
     </ul>
 
     <!-- progressbar -->
@@ -15,7 +16,7 @@
     </div>
     <br>
     <h1>Información de envio</h1>
-    
+
     <form action="index.php?page=sedah_infoenvio" method="post">
 
         <div class="container">
@@ -91,4 +92,5 @@
         </div>
         <br>
     </form>
+</div>
 </div>

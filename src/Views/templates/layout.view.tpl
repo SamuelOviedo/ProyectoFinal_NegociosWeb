@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{SITE_TITLE}}</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/{{BASE_DIR}}/public/css/appstyle.css" />
   <link rel="stylesheet" href="/{{BASE_DIR}}/public/css/plantillaBase.css" />
   <script src="https://kit.fontawesome.com/{{FONT_AWESOME_KIT}}.js" crossorigin="anonymous"></script>
   <!-- Font Awesome -->
@@ -24,16 +21,30 @@
   {{endfor BeginScripts}}
 </head>
 
-<body>
-  <ul class="menu-bar">
-    <li><a href="index.php?page=index"><i class="fas fa-home"></i>&nbsp;Inicio</a></li>
-    <li><a href="index.php?page=sec_login"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión</a></li>
-    <li><a href="index.php?page=sec_register"><i class="fas fa-user-plus"></i>&nbsp;Crear Cuenta</a></li>
-    <li><a href="index.php?page=sedah_plantillabase"><i class="fas fa-user-plus"></i>&nbsp;Plantilla</a></li>
-    <li><a href="index.php?page=sedah_infoenvio"><i class="fas fa-user-plus"></i>&nbsp;Pasarela</a></li>
-
-  </ul>
-  <main>
+<body class="body">
+  <nav class="nav">
+    <div class="container-fluid">
+      <div class="logo">
+        <img id="logoPeq" src="public\imgs\logoPeq2.png" alt="logo">
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="index.php?page=index">Inicio</a></li>
+          <li><a href="index.php?page=sec_login">Iniciar sesión</a></li>
+          <li><a href="index.php?page=sec_register">Crear cuenta</a></li>
+          <li class="navIcon"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><a href="index.php?page=sedah_infoenvio">Sobre nosotros</a></li>
+          <li><a href="#">Contactenos</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+  <main class="main">
     {{{page_content}}}
   </main>
   <footer>
@@ -48,3 +59,18 @@
 </body>
 
 </html>
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
+      console.log("OK");
+    } else {
+      $('.nav').removeClass('affix');
+    }
+  });
+</script>
