@@ -21,45 +21,45 @@
   {{endfor BeginScripts}}
 </head>
 
-<body class="body">
+<body>
+      <nav class="nav">
+        <div class="container-fluid">
+          <div class="logo">
+            <img id="logoPeq" src="public\imgs\logoPeq2.png" alt="logo">
+          </div>
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="index.php?page=index"><i class="fa-solid fa-house"></i>&nbsp;Inicio</a></li>
+              <li><a href="index.php?page=sec_login"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión</a></li>
+              <li><a href="index.php?page=sec_register"><i class="fas fa-user-plus"></i>&nbsp;Crear Cuenta</a></li>
+              <li><a href="index.php?page=sec_recuperarpwd"><i class="fa-solid fa-rotate"></i>&nbsp;Recuperar Contraseña</a></li>
+              <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;</a></li>
+              <li><a href="index.php?page=sedah_librosjava"><i class="fas fa-user-plus"></i>&nbsp;Categorias</a></li>
+              <li><a href="index.php?page=sedah_infoenvio">Sobre nosotros</a></li>
+              <li><a href="#">Contactenos</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+      </nav>
 
-  <nav class="nav">
-    <div class="container-fluid">
-      <div class="logo">
-        <img id="logoPeq" src="public\imgs\logoPeq2.png" alt="logo">
-      </div>
-      <div id="mainListDiv" class="main_list">
-        <ul class="navlinks">
-          <li><a href="index.php?page=index"><i class="fa-solid fa-house"></i>&nbsp;Inicio</a></li>
-          <li><a href="index.php?page=sec_login">Iniciar sesión</a></li>
-          <li><a href="index.php?page=sec_register">Crear cuenta</a></li>
-          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;</a></li>
-          <li><a href="index.php?page=sedah_librosjava"><i class="fas fa-user-plus"></i>&nbsp;Categorias</a></li>
-          <li><a href="index.php?page=sedah_infoenvio">Sobre nosotros</a></li>
-          <li><a href="#">Contactenos</a></li>
-        </ul>
-      </div>
-      <span class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-    </div>
-  </nav>
-
-  <main class="main">
-    {{{page_content}}}
-  </main>
-  <footer>
-    <div>Todo los Derechos Reservados 2021 &copy;</div>
-  </footer>
-  {{foreach EndScripts}}
-  <script src="/{{~BASE_DIR}}/{{this}}"></script>
-  {{endfor EndScripts}}
-  <!-- MDB -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
-  <script src="../../../public/js/progressbar.js"></script>
-</body>
+      <main class="main">
+        {{{page_content}}}
+      </main>
+      <footer>
+        <div>Todo los Derechos Reservados 2021 &copy;</div>
+      </footer>
+      {{foreach EndScripts}}
+      <script src="/{{~BASE_DIR}}/{{this}}"></script>
+      {{endfor EndScripts}}
+      <!-- MDB -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+      <script src="../../../public/js/progressbar.js"></script>
+  </body>
 
 </html>
 <!-- Jquery needed -->
