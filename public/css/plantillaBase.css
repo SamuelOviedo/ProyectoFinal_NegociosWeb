@@ -438,7 +438,18 @@ body {
 /*Error section*/
 .error {
     font-size: 0.9rem;
-    color: #c21010
+    color: #c21010;
+}
+
+.containerError{
+    text-align: center;
+    height: 100px;
+    padding-top: 130px;
+}
+
+.containerError h1{
+    font-size: 2.8rem;
+    color: #c21010;
 }
 
 /* index section */
