@@ -21,6 +21,11 @@
                 <img src="https://img14.360buyimg.com/n1/jfs/t1/202162/19/23119/269447/6278efaaEcb73d10b/5368bc6bc62134a0.jpg"
                     class="img-fluid" />
             </div>
+            <br>
+            &nbsp;<button 
+                type="button" class="btn btn-secondary" 
+                onclick="location.href='index.php?page=sedah_librosjava'"> Volver
+            </button>
         </div>
 
         <div class="col">
@@ -41,7 +46,7 @@
                     </div>
                     <br>
                     <button type="button" class="btn btn-secondary"
-                        onclick="location.href='index.php?page=sedah_detallejava'">Agregar al Carrito
+                        onclick="location.href='index.php?page=sedah_carrito'">Agregar al Carrito
                     </button>
                 </div>
             </div>
