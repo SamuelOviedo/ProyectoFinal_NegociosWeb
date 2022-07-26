@@ -22,6 +22,7 @@
 </head>
 
 <body class="body">
+
   <nav class="nav">
     <div class="container-fluid">
       <div class="logo">
@@ -45,6 +46,7 @@
       </span>
     </div>
   </nav>
+
   <main class="main">
     {{{page_content}}}
   </main>

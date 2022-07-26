@@ -111,7 +111,17 @@ body {
 }
 
 
-/* Contenido index Section*/
+/* Contenido index Section */
+
+.inicioIndex{
+
+}
+
+.inicioIndex .fondo {
+    width: 100%;
+    height: 1080px;
+}
+
 .contenidoIndex{
     height: 500px;
 }
