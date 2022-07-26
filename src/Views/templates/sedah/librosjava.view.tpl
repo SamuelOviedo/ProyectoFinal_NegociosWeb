@@ -1,3 +1,4 @@
+<div style="height: 150px"></div>
 <div class="container-fluid" style="width: 85%;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
         <div class="container-fluid">
@@ -106,4 +107,5 @@
             </div>
         </div>
     </div>
+    <div style="height: 500px;"></div>
 </div>

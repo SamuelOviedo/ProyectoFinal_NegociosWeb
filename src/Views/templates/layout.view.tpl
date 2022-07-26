@@ -29,10 +29,11 @@
       </div>
       <div id="mainListDiv" class="main_list">
         <ul class="navlinks">
-          <li><a href="index.php?page=index">Inicio</a></li>
+          <li><a href="index.php?page=index"><i class="fa-solid fa-house"></i>&nbsp;Inicio</a></li>
           <li><a href="index.php?page=sec_login">Iniciar sesión</a></li>
           <li><a href="index.php?page=sec_register">Crear cuenta</a></li>
-          <li class="navIcon"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;</a></li>
+          <li><a href="index.php?page=sedah_librosjava"><i class="fas fa-user-plus"></i>&nbsp;Categorias</a></li>
           <li><a href="index.php?page=sedah_infoenvio">Sobre nosotros</a></li>
           <li><a href="#">Contactenos</a></li>
         </ul>
