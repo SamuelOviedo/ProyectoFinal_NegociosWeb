@@ -1,16 +1,16 @@
 <div style="height: 150px"></div>
-<div class="container-fluid" style="width: 85%;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+<div class="container-fluid" style="width: 80%;">
+    <nav class="navCategorias">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.php?page=sedah_librosjava"> Java </a>
-                    <a class="nav-link" href="#"> PHP </a>
-                    <a class="nav-link" href="#"> C and C++ </a>
-                    <a class="nav-link" href="#"> JavaScript </a>
-                    <a class="nav-link" href="#"> .Net </a>
-                    <a class="nav-link" href="#"> Kotlin </a>
-                </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a class="nav-link" href="index.php?page=sedah_librosjava"><strong>Java</strong></a></li>
+                    <li><a class="nav-link" href="#"><strong>PHP</strong></a></li>
+                    <li><a class="nav-link" href="#"><strong>C and C++</strong></a></li>
+                    <li><a class="nav-link" href="#"><strong>JavaScript</strong></a></li>
+                    <li><a class="nav-link" href="#"><strong>.Net</strong></a></li>
+                    <li><a class="nav-link" href="#"><strong>Kotlin</strong></a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -23,8 +23,7 @@
                     class="img-fluid" />
             </div>
             <br>
-            &nbsp;<button 
-                type="button" class="btn btn-secondary" 
+            &nbsp;<button type="button" class="btn btn-secondary"
                 onclick="location.href='index.php?page=sedah_librosjava'"> Volver
             </button>
         </div>
