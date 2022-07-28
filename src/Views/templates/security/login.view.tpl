@@ -1,6 +1,7 @@
-<body style="background-image:url(https://img.freepik.com/foto-gratis/libro-magico-plano-papel_1232-2098.jpg?t=st=1658787514~exp=1658788114~hmac=e8c3d5ee5498884761b1cbae5b61d2636efdc90e4c9573719b4441fc1ae6d526&w=1060); background-size: 100% 100%; background-repeat: no-repeat;">
+<body style="background-image:url(https://img.freepik.com/foto-gratis/libro-magico-plano-papel_1232-2098.jpg?t=st=1658787514~exp=1658788114~hmac=e8c3d5ee5498884761b1cbae5b61d2636efdc90e4c9573719b4441fc1ae6d526&w=1060); background-size: 100% 100vh; background-repeat: no-repeat;">
   
 </body>
+<br><br><br><br>
 <section class="fullCenter">
   <form class="grid" method="post" action="index.php?page=sec_login{{if redirto}}&redirto={{redirto}}{{endif redirto}}">
     <section class="depth-1 row col-12 col-m-8 offset-m-2 col-xl-6 offset-xl-3">
@@ -18,6 +19,7 @@
           <div class="error col-12 py-2 col-m-8 offset-m-4">{{errorEmail}}</div>
         {{endif errorEmail}}
       </div>
+      <br><br><br><br><br>
       <div class="row">
         <label class="col-12 col-m-4 flex align-center" for="txtPswd"></label>
         <center>
@@ -28,6 +30,11 @@
         {{if errorPswd}}
         <center><div class="error col-12 py-2 col-m-8">{{errorPswd}}</div></center>
         {{endif errorPswd}}
+      </div>
+      <div class="row">
+        <div class="col-10 col-m-8">
+          <li style="list-style-type: none;"><a href="index.php?page=sec_recuperarpwd" style="text-decoration: none; color: black; padding-left: 21%"><i class="fa-solid fa-rotate"></i>&nbsp;¿Olvidó su Contraseña?</a></li>
+        </div>
       </div>
     {{if generalError}}
       <div class="row">
