@@ -19,6 +19,7 @@ body {
     line-height: 65px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
 }
 
 .nav div.logo {
@@ -86,7 +87,7 @@ body {
 .navCategorias{
     width: 80%;
     height: 80px;
-    position: fixed;
+    position: absolute;
     line-height: 65px;
     text-align: center;
     background-color: #fff;
@@ -416,6 +417,67 @@ body {
     color: #fff;
 }
 
+/* Card section */
+
+.detailCard {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: #262626;
+    overflow: hidden;
+}
+
+.detailCard .imgBx,
+.detailCard .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.detailCard .imgBx {
+    top: 0;
+    left: 0;
+}
+
+.detailCard:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+
+.detailCard .imgBx img {
+    width: 100%;
+}
+
+.detailCard .details {
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+
+.detailCard:hover .details {
+    top: 0;
+    left: 0%;
+}
+
+.detailCard .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+
+}
+
+.detailCard .details p {
+    margin: 20px 0 0;
+    color: #fff;
+}
 
 
 /* List progress */
